@@ -10,7 +10,7 @@ dainas=[
 
 ]
 
-mans_logs=sg.Window("Ziema", dainas)
+mans_logs=sg.Window("Ziema", dainas,size=(320,150))
 
 #title, layout(elementi/dalas ko pievieno logam)
 
@@ -26,5 +26,6 @@ while True:
  if notikums==sg.WIN_CLOSED or notikums=="Cancel": # taja close vietaa jasakrit tekstam ar 8. rindu ("camcel")
   break
  
+sg.icon bitmap("OL")
 
 mans_logs.close()
